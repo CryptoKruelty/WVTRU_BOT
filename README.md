@@ -1,33 +1,93 @@
-WVTRU Bot
-================
-A bot for automating WVTRU transactions on the Vitruveo blockchain.
-Getting Started
----------------
-To use this bot, you'll need to configure your Vitruveo wallet credentials and other settings. Here's a step-by-step guide to get you started:
-You'll find a file named .env_example in the same directory as the bot executable. Rename this file to .env.
-### 2. Add your Vitruveo wallet credentials to the .env.yml file
-**IMPORTANT**: Before proceeding, please make sure you understand the importance of keeping your private key safe. **DO NOT** use your main wallet's private key with this bot. Instead, create a new wallet specifically for this purpose and fund it with the amount of VTRU you wish to wrap.
-Open the newly renamed .env file and add your Vitruveo wallet credentials. You'll need to add the following variables:
-* KEY: Your Vitruveo wallet private key (from the new wallet you created)
-* VALUE: The amount of VTRU to wrap
-Here's an example of what the .env file should look like:
+# VTRU Bot v3.5
 
- #### PRIVATE_KEYS:
-    - your_vitruveo_private_key_here 
-    - key 2
-    - key 3
- #### VALUE: 100
+**VTRU Bot** is a powerful and user-friendly application designed to interact with the Ethereum blockchain. It allows users to manage multiple wallets, monitor blockchain blocks, and execute transactions automatically based on predefined conditions.
 
-*If you only want to run 1 key, only have 1 line of keys*
-> Replace **your_vitruveo_private_key_here** with your actual **Vitruveo wallet private key**.
->> AGAIN, PLEASE MAKE SURE TO KEEP YOUR PRIVATE KEY SAFE. DO NOT SHARE IT WITH ANYONE. IF YOU LOSE YOUR PRIVATE KEY, YOU WILL LOSE ACCESS TO YOUR FUNDS.
-### 3. Save the .env.yml file
-Once you've added your credentials to the .env.yml file, save it and close the file.
-### 4. Run the bot
-You can now run the bot by simply clicking on the executable file (WVTRU_Bot.exe). The bot will start running and will automatically send WVTRU transactions based on the settings in your .env file.
-* Note: Selling is not supported at this time.
-* You can also run multiple instances of the bot.
-## Notes
------
-* **Important**: Make sure to keep your .env file secure and do not share it with anyone. * Make sure to enter the correct private key and value in the .env file to avoid any errors.
-> **Important Disclaimer**: Please be aware that there is a 3% tax for using this bot. This means that 3% of the VTRU you wrap will be deducted as a fee. By using this bot, you acknowledge that you have read and understood the terms and conditions.
+---
+
+## Table of Contents
+
+- [Usage](#usage)
+- [Managing Private Keys](#managing-private-keys)
+- [Logging and Error Handling](#logging-and-error-handling)
+- [Disclaimer](#disclaimer)
+- [Happy Wrapping!](#happy-wrapping)
+
+---
+
+## Usage
+
+### Main Interface
+
+Upon launching the application, you'll be presented with the main interface, which includes the following components:
+
+- **Current Block:** Displays the latest block number on the Ethereum blockchain.
+- **Epoch Block:** Shows the target block number for executing transactions.
+- **Remaining Blocks:** Indicates how many blocks are left until the epoch block.
+- **Time Remaining:** Estimates the time left until the epoch block is reached.
+- **Loaded Wallets:** Shows the number of wallets currently loaded.
+
+### Controls
+
+- **Start Monitoring:** Begins monitoring the blockchain for new blocks. Click this button to initiate the monitoring process based on your configured parameters.
+
+- **Stop Monitoring:** Stops the ongoing monitoring process. This button becomes active once monitoring has started.
+
+- **Load Keys:** Opens the dialog to manage your private keys. Use this to add, edit, or delete your Ethereum wallet keys.
+
+### Configurable Parameters
+
+Adjust the following parameters to suit your transaction needs:
+
+- **Gas Price (Gwei):** Set the gas price for transactions. Enter your desired value in Gwei (e.g., `4`).
+
+- **Gas Limit:** Define the gas limit for transactions. Enter the appropriate value (e.g., `151000`).
+
+- **Value (VTRU):** Specify the amount of VTRU tokens to wrap. Enter the desired amount (e.g., `99`).
+
+### Console Output
+
+Real-time logs and transaction details are displayed in the console section of the GUI. This helps in monitoring the application's operations and debugging if necessary.
+
+---
+
+## Managing Private Keys
+
+### Adding a Private Key
+
+1. Click on the **"Load Keys"** button.
+2. In the **Manage Private Keys** dialog, click **"Add Key"**.
+3. Enter your private key in the prompt and confirm.
+
+### Editing a Private Key
+
+1. Select the key from the list.
+2. Click **"Edit Key"**.
+3. Modify the key in the prompt and confirm.
+
+### Deleting a Private Key
+
+1. Select the key from the list.
+2. Click **"Delete Key"** to remove it.
+
+> **⚠️ Security Warning:** Always ensure your private keys are handled securely. Do not share your private keys with anyone and consider using hardware wallets or secure storage solutions.
+
+---
+
+## Logging and Error Handling
+
+- **Console Output:** The application displays real-time logs in the console section of the GUI for monitoring and debugging purposes.
+- **Error Logs:** Errors are appended to an `errors.txt` file with timestamps. This helps in tracking issues and facilitating easier debugging.
+
+---
+
+## Disclaimer
+
+**Use at Your Own Risk:** This application interacts with the Ethereum blockchain and manages private keys. Ensure you understand the risks involved, including potential loss of funds. The developer is not responsible for any damages or losses resulting from the use of this software.
+
+---
+
+## Happy Wrapping!
+
+Thank you for using **VTRU Bot**! May your transactions be swift and your blocks be few. 🎉
+
+---
