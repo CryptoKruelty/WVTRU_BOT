@@ -1,6 +1,6 @@
 # VTRU Bot v3.5
 
-**VTRU Bot** is a powerful and user-friendly application designed to interact with the Ethereum blockchain. It allows users to manage multiple wallets, monitor blockchain blocks, and execute transactions automatically based on predefined conditions.
+**VTRU Bot** is a powerful and user-friendly application designed to interact with the Vitruveo blockchain. It allows users to manage multiple wallets, monitor blockchain blocks, and execute transactions automatically based on predefined conditions.
 
 ---
 
@@ -20,7 +20,7 @@
 
 Upon launching the application, you'll be presented with the main interface, which includes the following components:
 
-- **Current Block:** Displays the latest block number on the Ethereum blockchain.
+- **Current Block:** Displays the latest block number on the Vitruveo blockchain.
 - **Epoch Block:** Shows the target block number for executing transactions.
 - **Remaining Blocks:** Indicates how many blocks are left until the epoch block.
 - **Time Remaining:** Estimates the time left until the epoch block is reached.
@@ -32,7 +32,7 @@ Upon launching the application, you'll be presented with the main interface, whi
 
 - **Stop Monitoring:** Stops the ongoing monitoring process. This button becomes active once monitoring has started.
 
-- **Load Keys:** Opens the dialog to manage your private keys. Use this to add, edit, or delete your Ethereum wallet keys.
+- **Load Keys:** Opens the dialog to manage your private keys. Use this to add, edit, or delete your Vitruveo wallet keys.
 
 ### Configurable Parameters
 
@@ -82,7 +82,7 @@ Real-time logs and transaction details are displayed in the console section of t
 
 ## Disclaimer
 
-**Use at Your Own Risk:** This application interacts with the Ethereum blockchain and manages private keys. Ensure you understand the risks involved, including potential loss of funds. The developer is not responsible for any damages or losses resulting from the use of this software.
+**Use at Your Own Risk:** This application interacts with the Vitruveo blockchain and manages private keys. Ensure you understand the risks involved, including potential loss of funds. The developer is not responsible for any damages or losses resulting from the use of this software.
 
 ---
 
