@@ -44,6 +44,8 @@ Adjust the following parameters to suit your transaction needs:
 
 - **Value (VTRU):** Specify the amount of VTRU tokens to wrap. Enter the desired amount (e.g., `99`).
 
+- **Wrapping Fee (3%):** A 3% fee is applied to each VTRU wrapping transaction.
+
 ### Console Output
 
 Real-time logs and transaction details are displayed in the console section of the GUI. This helps in monitoring the application's operations and debugging if necessary.
